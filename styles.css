@@ -1,2 +1,61 @@
 /*Stylesheet for Sign up form*/
 
+main {
+    display: flex;
+}
+
+.sidebar {
+    background-image: url("assets/mountain.jpg");
+    background-position: center;
+    background-size: cover;
+    width: 50vw;
+    height: 100vh;
+    text-align: center;
+}
+
+.banner {
+    color: white;
+    background-color: black;
+}
+
+.photoCredit {
+    color: white;
+}
+
+.mainContent {
+    display: flex;
+    flex-direction: column;
+}
+
+.heading {
+    flex-grow: 1;
+    padding: 50px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+}
+
+.formMain {
+    background-color: antiquewhite;
+    flex-grow: 1;
+    padding: 50px;
+}
+
+.inputs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.formInput {
+    display: flex;
+    flex-direction: column;
+}
+
+.formSubmit {
+    flex-grow: 1.5;
+    padding: 50px;
+}
