@@ -10,20 +10,21 @@
     <main>
         <div class="sidebar">
             <div class="banner">
-                <p>(ODIN LOGO) ODIN</p>
+                <img src="assets/odin-lined.png" alt="logo" class="logo">
+                <p>ODIN</p>
             </div>
-            <p class="photoCredit">photo credit via upsplash</p>
+            <p class="photoCredit">Photo by Massimiliano Morosinotto on Upsplash</p>
         </div>
 
         <div class="mainContent">
-            <div class="heading">
+            <div class="headingSection">
                 <h2>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</h2>
                 <h2>You <em>know</em> you want to.</h2>
             </div>
 
-            <form action="#" method="post" class="signUp">
-                <div class="formMain">
-                    <h3>Let's do this!</h3>
+            <div class="inputSection">
+                <h2>Let's do this!</h2>
+                <form action="#" method="post" class="signUp" id="signUpForm">
                     <div class="inputs">
                         <div class="formInput">
                             <label for="firstName">First Name</label>
@@ -34,7 +35,7 @@
                             <input type="text" id="lastName" name="lastName">
                         </div>
                         <div class="formInput">
-                            <label for="eamil">Email</label>
+                            <label for="email">Email</label>
                             <input type="email" id="email" name="email">
                         </div>
                         <div class="formInput">
@@ -50,13 +51,16 @@
                             <input type="password" id="passwordConfirm" name="passwordConfirm">
                         </div>
                     </div>
-                </div>
-                <div class="formSubmit">
-                    <button type="submit">Create Account</button>
-                    <p>Already have an account? <span>Log in</span></p>
-                </div>
-            </form>
+                </form>
+            </div>
+            <div class="submitSection">
+                <button type="submit" form="signUpForm" class="submitBtn">Create Account</button>
+                <p>Already have an account? <span class="logIn">Log in</span></p>
+            </div>
 
+            <div class="footer">
+                <p>Copyright &copy; Patrick Brebner 2022</p>
+            </div>
         </div>
     </main>
     

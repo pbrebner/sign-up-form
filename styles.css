@@ -1,25 +1,57 @@
 /*Stylesheet for Sign up form*/
 
+@font-face {
+    font-family: NorseBold;
+    src: url(assets/Norse-Bold.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 main {
+    font-family: "Helvetica", "Arial", sans-serif;
     display: flex;
 }
 
 .sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
     background-image: url("assets/mountain.jpg");
     background-position: center;
     background-size: cover;
-    width: 50vw;
+
+    width: 1000px;
     height: 100vh;
     text-align: center;
 }
 
 .banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     color: white;
-    background-color: black;
+    background-color: rgba(0,0,0,0.5);
+    font-family: NorseBold;
+    font-size: 6rem;
+    margin-top: 300px;
+    padding: 30px;
 }
+
+.logo {
+    height: 120px;
+}
+
 
 .photoCredit {
     color: white;
+    font-size: 0.7rem;
+    margin: 10px;
 }
 
 .mainContent {
@@ -27,35 +59,89 @@ main {
     flex-direction: column;
 }
 
-.heading {
-    flex-grow: 1;
-    padding: 50px;
+.headingSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex: 1;
+    gap: 20px;
+
+    padding: 25px 60px 25px 50px;
+    background-color:#F6F7F8;
+    font-size: 1.1rem;
 }
 
 form {
     display: flex;
     flex-direction: column;
-    flex-grow: 2;
 }
 
-.formMain {
-    background-color: antiquewhite;
-    flex-grow: 1;
+.inputSection {
+    flex: 1;
+
+    background-color:white;
     padding: 50px;
+    max-height: 380px;
+    min-height: fit-content;
+
+    z-index: 10;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.123);
+}
+
+.inputSection h2 {
+    margin-bottom: 30px;
+    font-size: 1.5rem;
 }
 
 .inputs {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
+    width: fit-content;
 }
 
 .formInput {
     display: flex;
     flex-direction: column;
+    margin-right: 50px;
 }
 
-.formSubmit {
-    flex-grow: 1.5;
+.formInput input {
+    font-size: 1rem;
+    width: 300px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #D6D9DC;
+    padding: 5px;
+}
+
+.submitSection {
+    flex: 1;
+
     padding: 50px;
+    background-color:#F6F7F8;
+}
+
+.submitBtn {
+    font-size: 1.1rem;
+    font-weight: 600;
+    background-color: #596D48;
+    color: white;
+    padding: 10px 50px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.logIn {
+    color: #596D48;
+    font-weight: 700;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+
+    background-color:#F6F7F8;
+    padding-bottom: 8px;
+    font-size: 0.8rem;
 }
