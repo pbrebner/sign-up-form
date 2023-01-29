@@ -21,34 +21,39 @@
                 <h2>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</h2>
                 <h2>You <em>know</em> you want to.</h2>
             </div>
-
             <div class="inputSection">
                 <h2>Let's do this!</h2>
-                <form action="#" method="post" class="signUp" id="signUpForm">
+                <form method="post" class="signUp" id="signUpForm">
                     <div class="inputs">
                         <div class="formInput">
                             <label for="firstName">First Name</label>
-                            <input type="text" id="firstName" name="firstName">
+                            <input type="text" class="firstName" id="firstName" name="firstName" placeholder="Jane" required>
+                            <div class='error firstNameError'></div>
                         </div>
                         <div class="formInput">
                             <label for="lastName">Last Name</label>
-                            <input type="text" id="lastName" name="lastName">
+                            <input type="text" class="lastName" id="lastName" name="lastName" placeholder="Doe" required>
+                            <div class='error lastNameError'></div>
                         </div>
                         <div class="formInput">
                             <label for="email">Email</label>
-                            <input type="email" id="email" name="email">
+                            <input type="email" class="email" id="email" name="email" placeholder="you@email.com" required>
+                            <div class='error emailError'></div>
                         </div>
                         <div class="formInput">
                             <label for="tel">Phone Number</label>
-                            <input type="tel" id="tel" name="tel">
+                            <input type="tel" class="tel" id="tel" name="tel" pattern="[0-9]{10}" required>
+                            <div class='error telError'></div>
                         </div>
                         <div class="formInput">
-                            <label for="password">Password</label>
-                            <input type="password" id="password" name="password">
+                            <label for="pwd">Password</label>
+                            <input type="password" class="pwd" id="pwd" name="pwd" minlength="6" maxlength="12" pattern='(?=.*\d)(?=.*[a-z])(?=.*[A-Z])' required>
+                            <div class='error pwdError'></div>
                         </div>
                         <div class="formInput">
-                            <label for="passwordConfirm">Confirm Password</label>
-                            <input type="password" id="passwordConfirm" name="passwordConfirm">
+                            <label for="pwdConfirm">Confirm Password</label>
+                            <input type="password" class="pwdConfirm" id="pwdConfirm" name="pwdConfirm" minlength="6" maxlength="12" pattern='(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{12,}' required>
+                            <div class='error pwdConfirmError'></div>
                         </div>
                     </div>
                 </form>
